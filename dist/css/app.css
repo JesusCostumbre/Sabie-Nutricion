@@ -358,7 +358,7 @@ header {
 }
 
 .contenido-header a {
-  margin: 2rem;
+  margin-right: 3rem;
   color: #000000;
 }
 .contenido-header a:hover {
