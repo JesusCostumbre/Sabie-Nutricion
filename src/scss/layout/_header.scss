@@ -1,0 +1,22 @@
+@use 'base/variables' as v;
+
+
+header{
+    background-color: v.$claro;
+    height: 200px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+}
+.contenido-header{
+    
+    a{
+        margin: 2rem;
+        color: v.$negro;
+        &:hover{
+            border-bottom: 2px solid v.$negro; 
+            text-decoration: none;  
+        }
+
+    }
+}
