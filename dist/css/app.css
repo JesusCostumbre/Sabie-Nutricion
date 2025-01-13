@@ -365,3 +365,46 @@ header {
   border-bottom: 2px solid #000000;
   text-decoration: none;
 }
+
+.contenido-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-image: url(/src/img/fondo-hero.jpg);
+  background-size: cover;
+}
+
+.contenedor-info {
+  width: 80%;
+  box-sizing: border-box;
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.contenedor-info h2 {
+  font-weight: 500;
+}
+.contenedor-info p {
+  color: #655B5B;
+}
+.contenedor-info button {
+  width: 50%;
+  height: 8rem;
+  background-color: #493222;
+  border-radius: 1rem;
+  border: none;
+  color: white;
+  margin-top: 2rem;
+}
+
+.contenido-hero__info {
+  width: 80%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
