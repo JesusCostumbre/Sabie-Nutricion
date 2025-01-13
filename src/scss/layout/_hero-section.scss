@@ -1,0 +1,38 @@
+@use 'base/variables' as v;
+
+.contenido-hero{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(/src/img/fondo-hero.jpg);
+}
+
+.contenido-hero__info{
+    width: 65%;
+    background-color: v.$blanco;
+    text-align: center;
+    padding: 2rem;
+
+
+    h2{
+        font-weight: 500;
+    }
+
+    p{
+        color: v.$texto;
+    }
+
+    button{
+        background-color: v.$cafe;
+        border-radius: 1rem;
+        border: none;
+        color: v.$blanco;
+        margin-top: 2rem;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 1.5rem 10rem;
+        text-decoration: none;
+    }
+}
