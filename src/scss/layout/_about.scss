@@ -1,0 +1,37 @@
+@use 'base/variables' as v;
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    text-align: center;
+    place-items: center;
+    margin: 0 auto;
+    padding: 4rem 0 4rem 0;
+    background-color: v.$claro;
+
+    h2{
+        font-weight: 500;
+    }
+}
+
+.div2{
+    grid-column: 1;
+    order: 1;
+    text-align: left;
+    line-height: 2.5;
+    margin-left: 8rem;
+}
+
+.div3{
+    grid-column: 2;
+    order: 2;
+    margin-right: 8rem;
+
+    img{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        object-fit: cover; 
+    }
+}
