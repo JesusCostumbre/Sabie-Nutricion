@@ -1,20 +1,23 @@
 @use 'base/variables' as v;
 
 .about{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-    text-align: center;
-    place-items: center;
-    margin: 0 auto;
-    padding: 4rem 0 4rem 0;
     background-color: v.$claro;
-
+    text-align: center;
     h2{
         font-weight: 500;
+        padding: 4rem 0 0 0;
+        margin-bottom: 2rem ;
     }
 }
 
+.contenedor-about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    place-items: center;
+    margin: 0 auto;
+    padding: 4rem 0 4rem 0;
+}
 .div2{
     grid-column: 1;
     order: 1;
