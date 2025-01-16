@@ -609,12 +609,13 @@ footer {
   align-items: center;
   background-color: #493222; /* Marrón oscuro */
   width: 50%;
-  height: auto;
+  height: 100px;
 }
 @media (max-width: 480px) {
   .social-container {
     flex-direction: column;
     margin: 2rem 0;
+    height: auto;
   }
 }
 
@@ -628,7 +629,10 @@ footer {
 @media (max-width: 480px) {
   .social-item {
     align-items: center;
-    margin: 2rem 0 0 0;
+    margin-top: 2rem;
+  }
+  .social-item:first-child {
+    margin-top: 0;
   }
 }
 .social-item .svg {

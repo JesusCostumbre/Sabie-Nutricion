@@ -37,11 +37,12 @@ footer{
     align-items: center;
     background-color: v.$cafe; /* Marrón oscuro */
     width: 50%;
-    height: auto;
+    height: 100px;
 
     @include m.telefono{
       flex-direction: column;
       margin: 2rem 0;
+      height: auto;
     }
   }
   
@@ -54,7 +55,10 @@ footer{
 
     @include m.telefono{
       align-items: center;
-      margin: 2rem 0 0 0;
+      margin-top: 2rem;
+      &:first-child{
+        margin-top: 0;
+      }
     }
 
     .svg{
