@@ -401,7 +401,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(src/img/fondo-hero.jpg);
+  background-image: url(/src/img/fondo-hero.jpg);
 }
 
 .contenido-hero__info {
