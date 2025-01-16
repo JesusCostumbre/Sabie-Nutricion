@@ -1,11 +1,13 @@
-@mixin telefono {
-    @media (min-width: 768px){
+@use 'variables' as v;
 
+@mixin telefono {
+    @media (max-width: v.$telefono){
+        @content;
     }
 }
 
 @mixin desktop {
-    @media (min-width: 1024px ) {
-        
+    @media (max-width: v.$desktop) {
+        @content;
     } 
 }

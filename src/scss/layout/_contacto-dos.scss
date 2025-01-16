@@ -1,0 +1,77 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contacto-dos{
+    background-color: v.$claro;
+    width: auto;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-contacto{
+    background-color: v.$blanco;
+    height: auto;
+    width: 65%;
+    padding: 4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    h3{
+        max-width: 80%;
+        word-wrap: break-word;
+        margin: 0 auto 3rem auto;
+        line-height: 2;
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: v.$cafe;
+}
+.social-container {
+    display: flex;
+    align-items: center;
+    background-color: v.$cafe; /* Marrón oscuro */
+    width: 50%;
+    height: auto;
+
+    @include m.telefono{
+      flex-direction: column;
+      margin: 2rem 0;
+    }
+  }
+  
+  .social-item {
+    display: flex;
+    align-items: center;
+    color: #fff; /* Blanco */
+    font-size: 16px;
+    margin: 0 auto;
+
+    @include m.telefono{
+      align-items: center;
+      margin: 2rem 0 0 0;
+    }
+
+    .svg{
+        margin-right:1rem ;
+    }
+
+    a{
+        color: v.$blanco;
+        text-decoration: none;
+    }
+  }
+  
+  .social-item i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .social-item span {
+    font-size: 16px;
+  }

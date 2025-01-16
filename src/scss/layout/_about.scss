@@ -1,4 +1,5 @@
 @use 'base/variables' as v;
+@use 'base/mixins' as m;
 
 .about{
     background-color: v.$claro;
@@ -16,21 +17,26 @@
     width: 80%;
     place-items: center;
     margin: 0 auto;
-    padding: 4rem 0 4rem 0;
+    padding: 2rem 0 4rem 0;
+
+    @include m.telefono{
+        display: flex;
+        flex-direction: column;
+    }
 }
 .div2{
     grid-column: 1;
     order: 1;
     text-align: left;
-    line-height: 2.5;
-    margin-left: 8rem;
+    @include m.telefono{
+        text-align: center;
+    }
 }
 
 .div3{
     grid-column: 2;
     order: 2;
-    margin-right: 8rem;
-
+    padding: 3rem 0;
     img{
         width: 250px;
         height: 250px;

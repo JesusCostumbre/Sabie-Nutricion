@@ -1,4 +1,5 @@
 @use 'base/variables' as v;
+@use 'base/mixins' as m;
 
 .servicios{
     margin: 0 auto;
@@ -9,9 +10,25 @@
 
 .contenedor-servicios{
     display: flex;
-    justify-content: center;
-    justify-content: space-around;
 
+    @include m.telefono{
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    @include m.telefono{
+        .servicio{
+            border-bottom: 2px solid v.$claro;
+    
+            &:last-child{
+                border-bottom: 0;
+            }
+    }
+    }
+    h3{
+        margin: 2rem 0 1.5rem 0;
+        font-weight: 600;
+    }
     p{
         max-width: 90%;
         word-wrap: break-word;
@@ -20,5 +37,6 @@
     p:nth-of-type(2){
         font-size: 2rem;
         font-weight: 500;
+        margin-bottom: 4rem;
     }
 }

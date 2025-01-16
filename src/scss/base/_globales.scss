@@ -17,7 +17,7 @@ body {
     font-size: 2rem;
 }
 p {
-    line-height: 1.5;
+    line-height: 2;
     font-size: 1.8rem;
 }
 .contenedor {
@@ -39,4 +39,23 @@ h2{
 }
 h1 {
     font-size: 4rem;
+}
+.contactame{
+    max-width: 80%;
+    min-width: 40%;
+    background-color: v.$cafe;
+    border-radius: 1rem;
+    border: none;
+    color: v.$blanco;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    .svg{
+        margin-right: 1rem;
+    }
 }
