@@ -10,79 +10,120 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="contenido-header">
-            <h1>Titulo</h1>
+  <nav class="navbar">
+    <h1 class="navbar-title">Sabie Nutrición Deportiva</h1>
 
-            <a href="">Home</a>
-            <a href="">Sobre Mi</a>
-            <a href="">Servicios</a>
-            <a href="">Testimonios</a>
-            <a href="">Contactame</a>
-        </div>
-    </header>
+    <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+
+    <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+        <span class="material-icons">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" stroke-width="2"> <path d="M4 6l16 0"></path> <path d="M4 12l16 0"></path> <path d="M4 18l16 0"></path> </svg> 
+        </span>
+    </button>
+    <nav class="navbar-menu">
+        <button type="button">Home</button>
+        <button type="button">Sobre Mi</button>
+        <button type="button">Servicios</button>
+        <button type="button">Testimonios</button>
+        <button type="button">Contáctame</button>
+    </nav>
+</nav>
+
 
     <section class="contenido-hero">
         <div class="contenido-hero__info">
-            <h2>Alcanza Tu Mejor Versión</h2>
-            <p>Cada cuerpo es único. Diseño planes que se adaptan a ti, tus metas y tu estilo de vida.</p>
-            <p class="ultimo">¡Logra tu mejor versión!</p>
-            <button class="contactame">
-                <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"> <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path> <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"></path> </svg> 
-                Contactame
-            </button>
+            <h2>Maximiza tu rendimiento, alcanza tu meta.</h2>
+            <p>Nutrición diseñada para atletas que buscan ser invencibles.</p>
+            <p class="ultimo">Nutrición especializada para el alto rendimiento.</p>
+            <button class="contactame" onclick="window.open('https:/wa.me/529516861775?text=Hola!%20Me%20gustaría%20recibir%20información%20acerca%20de...', '_blank')">
+              <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"> 
+                  <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path> 
+                  <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"></path> 
+              </svg> 
+              Contáctame
+          </button>
         </div>
     </section>
 
     <section class="about">
-        <h2>Hola, soy Sadot</h2>
+        <h2>¡Bienvenido!</h2>
         <div class="contenedor-about">
 
-            <div class="div2"> 
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam labore dolorum sunt porro at quisquam iusto officia nulla ipsa consequuntur, sequi itaque aspernatur dignissimos. Corporis possimus illum obcaecati perferendis deserunt. 
-            </p>
-
-            <p>
-                Loremipsum dolor sit amet consectetur adipisicing elit. Numquam labore dolorum sunt porro at quisquam iusto officia nulla ipsa consequuntur, sequi itaque aspernatur dignissimos. Corporis possimus illum obcaecati perferendis deserunt.
-            </p>
-
-            <p>
-                Luis Sadot
-            </p>
-             
+            <div class="contenido-texto">
+                <h3>Formación Académica</h3>
+                <ul>
+                  <li>
+                    <p>Licenciatura en Nutrición</p>
+                    Universidad del Valle<br>
+                    Cédula Profesional: [Número]
+                  </li>
+                  <li>
+                    <p>Maestría en Nutrición Deportiva</p>
+                    Universidad del Valle de México
+                  </li>
+                  <li>
+                    <p>Máster en Entrenamiento <br> y Nutrición Deportiva</p> 
+                    Universidad Europea de Madrid
+                  </li>
+                  <li>
+                    <p>Maestrante en Ciencias en Nutrición</p>
+                    Universidad Autónoma de Nuevo León
+                  </li>
+                </ul>
+              </div>
+              <!-- Contenido de imagen y licencias -->
+              <div class="contenido-imagen">
+                <img src="src/img/perfil.jpg" alt="Perfil">
+              </div>
+              
+              <div class="contenido-texto texto-dos">
+                <h3>Experiencia Profesional</h3>
+                <ul>
+                  <li>
+                    <p>Pasantía:</p>
+                    Instituto Nacional de Nutrición
+                  </li>
+                  <li>
+                    <p>Diplomados:</p>
+                    <li>Nutrición Clínica <br> UNAM</li>
+                    <li>Nutrición Deportiva <br> Tecnológico de Monterrey</li>
+                  </li>
+                </ul>
+              
+                <h3>Publicaciones</h3>
+                <ul>
+                  <li>Autor de artículos en revistas científicas <br> especializadas en nutrición deportiva.</li>
+                </ul>
+              </div>
+        
         </div>
-        <div class="div3"> 
-            <img src="src/img/perfil.jpg" alt="">
-            <p>Lic</p>
-            <p>Lic</p>
-            <p>Lic</p>
-
-            </div>
-        </div>
-            
-    </section>
-
+      </section>
     <section class="servicios">
         <h2>Servicios</h2>
 
         <div class="contenedor-servicios">
             <div class="servicio">
-                <h3>Servicio Uno</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quis fuga porro eos cum modi autem,</p>
-                <p>$99.99</p>
+                <h3>Consulta Nutricional</h3>
+                <p>Incluye: <br>
+                    Valoración Antropométrica, Plan de Alimentación en Actividad Física, <br> Esquema de Hidratación, Asesoría en Suplementación.
+
+                </p>
+                <p>$700.00</p>
             </div>
 
             <div class="servicio">
-                <h3>Servicio Dos</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quis fuga porro eos cum modi autem,</p>
-                <p>$99.99</p>
+                <h3>Medición de Tasa de Sudoración</h3>
+                <p> 
+                    -En campo <br>
+                    -Durante el entrenamiento o competencia <br>
+                    Hidratación específica para antes, durante y después de la competencia</p>
+                <p>$500.00</p>
             </div>
 
             <div class="servicio">
-                <h3>Servicio Tres</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quis fuga porro eos cum modi autem,</p>
-                <p>$99.99</p>
+                <h3>Consultoria para equipos <br> de alto rendimiento</h3>
+                <p>Lleva a tu conjunto de atletas al siguiente nivel</p>
+                <p>$ depende del número de atletas</p>
             </div>
         </div>
     </section>
@@ -104,7 +145,7 @@
         </div> 
       </section>
 
-      <section class="contacto-dos">
+      <!-- <section class="contacto-dos">
         <div class="contenedor-contacto">
             <h3>
                 ¿Qué esperas? <br>
@@ -116,25 +157,26 @@
                 Contactame 
             </button>
         </div>
-      </section>
+      </section> -->
 
       <footer>
         <div class="social-container">
             <div class="social-item">
                 <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"> <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path> <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"></path> </svg> 
-            <a href="" >+52 999 999 9999</a>
+            <a href="https://wa.me//529516861775?text=Hola!%20Me%20gustaría%20recibir%20información%20acerca%20de..." >951 686 1775</a>
             </div>
             <div class="social-item">
                 <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"> <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path> </svg> 
-            <a href="" >Sabie</a>
+            <a href="https://www.facebook.com/sabienutricion" >sabie_nutricion</a>
             </div>
             <div class="social-item">
                 <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"> <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path> <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path> <path d="M16.5 7.5l0 .01"></path> </svg> 
-            <a href="">Sabie</a>
+            <a href="https://www.instagram.com/sabie_nutricion?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">sabie_nutricion</a>
             </div>
         </div>
         
       </footer>
       
+      <script src="./app.js"></script>
 </body>
 </html>

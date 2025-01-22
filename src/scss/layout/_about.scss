@@ -7,40 +7,67 @@
     h2{
         font-weight: 500;
         padding: 4rem 0 0 0;
-        margin-bottom: 2rem ;
+        margin-bottom: rem ;
     }
 }
 
 .contenedor-about{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
     width: 80%;
-    place-items: center;
     margin: 0 auto;
     padding: 2rem 0 4rem 0;
 
+    
     @include m.telefono{
         display: flex;
         flex-direction: column;
     }
 }
-.div2{
-    grid-column: 1;
-    order: 1;
+
+.contenido-texto{
+    width: auto;
+    font-size: 1.6rem;
     text-align: left;
-    @include m.telefono{
-        text-align: center;
+    word-wrap: break-word;
+    h3{
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+    }
+    
+    ul{
+        list-style: none;
+        padding: 1rem;
+    }
+
+    ul li{
+        margin-bottom: 1rem;
+        padding-left: 0;
+    }
+    strong{
+        font-weight: 500;
+        line-height: 3;
+        
+    }
+    p{
+        font-weight: 500;
+        line-height: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    
+}
+
+.contenido-imagen{
+    img{
+        width: 35rem;
+        height: 35rem;
+        border-radius: 50%;
     }
 }
 
-.div3{
-    grid-column: 2;
-    order: 2;
-    padding: 3rem 0;
-    img{
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        object-fit: cover; 
-    }
+.texto-dos{
+    margin-left: 2rem;
+    word-wrap: break-word;
 }
