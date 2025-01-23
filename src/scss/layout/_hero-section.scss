@@ -1,4 +1,5 @@
 @use 'base/variables' as v;
+@use 'base/mixins' as m;
 
 .contenido-hero{
     height: 600px;
@@ -13,8 +14,8 @@
     width: 65%;
     background-color: v.$blanco;
     text-align: center;
-    padding: 4rem;
-
+    padding: 2rem;
+    max-width: 80%;
 
     p{
         color: v.$texto;
@@ -28,5 +29,10 @@
     
     h2{
         font-weight: 500;
+    }
+
+    @include m.telefono{
+        width: 80%;
+        height: auto;
     }
 }

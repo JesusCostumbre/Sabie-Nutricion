@@ -19,9 +19,13 @@
     width: 80%;
     margin: 0 auto;
     padding: 2rem 0 4rem 0;
-
     
     @include m.telefono{
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include m.tablet{
         display: flex;
         flex-direction: column;
     }
@@ -64,6 +68,7 @@
         width: 35rem;
         height: 35rem;
         border-radius: 50%;
+        object-fit: cover;
     }
 }
 

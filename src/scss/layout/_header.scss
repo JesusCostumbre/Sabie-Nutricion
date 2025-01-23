@@ -1,126 +1,126 @@
 @use 'base/variables' as v;
 
-  button {
-    border: 0;
-    padding: 0;
-    background: transparent;
-    color: inherit;
-    cursor: pointer;
-  }
-  .navbar {
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 64px;
-    background: v.$claro;
-    box-sizing: border-box;
-  }
+ button {
+   border: 0;
+   padding: 0;
+   background: transparent;
+   color: inherit;
+   cursor: pointer;
+ }
+ .navbar {
+   z-index: 1;
+   top: 0;
+   left: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 64px;
+   background: v.$claro;
+   box-sizing: border-box;
+ }
   
-  @media only screen and (min-width: 600px) {
-    .navbar {
-      justify-content: space-between;
-      padding: 0 0 0 16px;
-    }
-  }
+ @media only screen and (min-width: 600px) {
+   .navbar {
+     justify-content: space-between;
+   }
+ }
   
-  .navbar-overlay {
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: v.$cafe;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s;
-  }
+ .navbar-overlay {
+   position: fixed;
+   z-index: 2;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: v.$cafe;
+   visibility: hidden;
+   opacity: 0;
+   transition: 0.3s;
+ }
   
-  header.open .navbar-overlay {
-    visibility: visible;
-    opacity: 1;
-  }
+ header.open .navbar-overlay {
+   visibility: visible;
+   opacity: 1;
+ }
   
-  @media only screen and (min-width: 600px) {
-    .navbar-overlay {
-      display: none;
-    }
-  }
+ @media only screen and (min-width: 600px) {
+   .navbar-overlay {
+     display: none;
+   }
+ }
   
-  .navbar-burger {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: grid;
-    place-items: center;
-    width: 64px;
-    height: 64px;
-    padding: 0;
-  }
+ .navbar-burger {
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: grid;
+   place-items: center;
+   width: 64px;
+   height: 64px;
+   padding: 0;
+ }
   
-  @media only screen and (min-width: 600px) {
-    .navbar-burger {
-      display: none;
-    }
-  }
+ @media only screen and (min-width: 600px) {
+   .navbar-burger {
+     display: none;
+   }
+ }
   
-  .navbar-title {
-    margin: 0;
-    font-size: 1.8rem;
-    color: v.$negro ;
-    font-weight: 500;
-  }
+ .navbar-title {
+   margin: 0;
+   font-size: 1.8rem;
+   color: v.$negro ;
+   font-weight: 500;
+   padding-left: 1.5rem;
+ }
   
-  .navbar-menu {
-    position: fixed;
-    z-index: 3;
-    top: 0;
-    left: 0;
-    translate: -100% 0;
-    width: 270px;
-    height: 100%;
-    padding: 20px;
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-    align-items: flex-start;
-    background: v.$cafe;
-    visibility: hidden;
-    transition: translate 0.3s;
-    color: v.$blanco;
-  }
+ .navbar-menu {
+   position: fixed;
+   z-index: 3;
+   top: 0;
+   left: 0;
+   translate: -100% 0;
+   width: 270px;
+   height: 100%;
+   padding: 20px;
+   display: flex;
+   gap: 10px;
+   flex-direction: column;
+   align-items: flex-start;
+   background: v.$cafe;
+   visibility: hidden;
+   transition: translate 0.3s;
+ }
   
-  body.open .navbar-menu {
-    translate: 0 0;
-    visibility: visible;
-  }
-  body.open .navbar-menu > button {
-    color: v.$blanco; // Letras blancas cuando el menú está abierto
-}
-  
-  @media only screen and (min-width: 600px) {
-    .navbar-menu {
-      position: static;
-      translate: 0 0;
-      width: auto;
-      background: transparent;
-      flex-direction: row;
-      visibility: visible;
+ body.open .navbar-menu {
+   translate: 0 0;
+   visibility: visible;
+ }
+ body.open .navbar-menu > button {
+   color: v.$blanco; // Letras blancas cuando el menú está abierto
+   &:hover{
+    color: rgb(174, 173, 173);
+   }
+ }
+ @media only screen and (min-width: 600px) {
+   .navbar-menu {
+     position: static;
+     translate: 0 0;
+     width: auto;
+     background: transparent;
+     flex-direction: row;
+     visibility: visible;
       
-    }
-  }
+   }
+ }
   
-  .navbar-menu > button {
-    color: v.$negro;
-    background: transparent;
-    padding: 0 8px;
-  }
+ .navbar-menu > button {
+   color: v.$negro;
+   background: transparent;
+   padding: 0 8px;
+ }
   
-  .navbar-menu > button.active {
-    color: inherit;
-  }
+ .navbar-menu > button.active {
+   color: inherit;
+ }

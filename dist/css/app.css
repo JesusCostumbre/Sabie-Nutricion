@@ -387,7 +387,6 @@ button {
 }
 
 .navbar {
-  position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
@@ -403,7 +402,6 @@ button {
 @media only screen and (min-width: 600px) {
   .navbar {
     justify-content: space-between;
-    padding: 0 0 0 16px;
   }
 }
 .navbar-overlay {
@@ -450,6 +448,7 @@ header.open .navbar-overlay {
   font-size: 1.8rem;
   color: #000000;
   font-weight: 500;
+  padding-left: 1.5rem;
 }
 
 .navbar-menu {
@@ -468,7 +467,6 @@ header.open .navbar-overlay {
   background: #493222;
   visibility: hidden;
   transition: translate 0.3s;
-  color: white;
 }
 
 body.open .navbar-menu {
@@ -478,6 +476,9 @@ body.open .navbar-menu {
 
 body.open .navbar-menu > button {
   color: white;
+}
+body.open .navbar-menu > button:hover {
+  color: rgb(174, 173, 173);
 }
 
 @media only screen and (min-width: 600px) {
@@ -513,7 +514,8 @@ body.open .navbar-menu > button {
   width: 65%;
   background-color: white;
   text-align: center;
-  padding: 4rem;
+  padding: 2rem;
+  max-width: 80%;
 }
 .contenido-hero__info p {
   color: #655B5B;
@@ -525,6 +527,12 @@ body.open .navbar-menu > button {
 }
 .contenido-hero__info h2 {
   font-weight: 500;
+}
+@media (max-width: 480px) {
+  .contenido-hero__info {
+    width: 80%;
+    height: auto;
+  }
 }
 
 .about {
@@ -547,6 +555,12 @@ body.open .navbar-menu > button {
   padding: 2rem 0 4rem 0;
 }
 @media (max-width: 480px) {
+  .contenedor-about {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
   .contenedor-about {
     display: flex;
     flex-direction: column;
@@ -585,6 +599,7 @@ body.open .navbar-menu > button {
   width: 35rem;
   height: 35rem;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .texto-dos {
