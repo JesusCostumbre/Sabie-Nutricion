@@ -10,8 +10,23 @@
 
 .contenedor-servicios{
     display: flex;
+    justify-content: space-between;
+
+    .servicio {
+        flex: 1;  // Asegura que todos ocupen el mismo espacio
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        padding: 2rem;
+    }
 
     @include m.telefono{
+        flex-direction: column;
+        text-align: left;
+    }
+
+    @include m.tablet{
         flex-direction: column;
         text-align: left;
     }
