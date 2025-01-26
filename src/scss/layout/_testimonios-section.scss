@@ -47,7 +47,7 @@
   text-align: center;
   position: relative;
   padding: 20px;
-  width: 350px;
+  width: 33rem;
   flex-direction: column;
   flex-shrink: 0;
 }
@@ -69,6 +69,8 @@
 .profile-pic img {
   width: 90%;
   height: 90%;
+  border-radius: 50%;
+  object-fit: cover;
 }
 .name {
   font-size: 2rem;
