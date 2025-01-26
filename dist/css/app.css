@@ -531,7 +531,8 @@ body.open .navbar-menu > button:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(/src/img/fondo-hero.jpg);
+  background-image: url(/src/img/fondo-hero.webp);
+  background-repeat: no-repeat;
 }
 
 .contenido-hero__info {
@@ -540,6 +541,7 @@ body.open .navbar-menu > button:hover {
   text-align: center;
   padding: 2rem;
   max-width: 80%;
+  will-change: transform, opacity;
 }
 .contenido-hero__info p {
   color: #655B5B;
