@@ -19,4 +19,4 @@ Landing page profesional diseñada para un nutriólogo, enfocada en captar clien
 ## 📞 Contacto
 **Desarrollador:** Jesús Costumbre  
 **Email:** jesuscostumbre11@gmail.com 
-**WhatsApp:** +52 9515881087
+**WhatsApp:** +52 9515881087.
