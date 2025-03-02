@@ -36,7 +36,7 @@ footer{
     display: flex;
     align-items: center;
     background-color: v.$cafe; /* Marrón oscuro */
-    width: 50%;
+    width: 70%;
     height: 100px;
 
     @include m.telefono{
@@ -78,4 +78,18 @@ footer{
   
   .social-item span {
     font-size: 16px;
+  }
+
+  .ubicacion{
+    color: v.$blanco;
+    font-size: 1.6rem;
+    margin: 0;
+    font-weight: 400;
+    max-width: 80%;
+    word-wrap: break-word;
+    margin-left: 1rem;
+    
+    @include m.telefono{
+      margin: 2rem 0 0 0;
+    }
   }

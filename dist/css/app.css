@@ -837,7 +837,7 @@ footer {
   display: flex;
   align-items: center;
   background-color: #493222; /* Marrón oscuro */
-  width: 50%;
+  width: 70%;
   height: 100px;
 }
 @media (max-width: 480px) {
@@ -879,4 +879,19 @@ footer {
 
 .social-item span {
   font-size: 16px;
+}
+
+.ubicacion {
+  color: white;
+  font-size: 1.6rem;
+  margin: 0;
+  font-weight: 400;
+  max-width: 80%;
+  word-wrap: break-word;
+  margin-left: 1rem;
+}
+@media (max-width: 480px) {
+  .ubicacion {
+    margin: 2rem 0 0 0;
+  }
 }
