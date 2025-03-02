@@ -1,6 +1,11 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
+
+.servicios{
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
 .about{
     background-color: v.$claro;
     text-align: center;

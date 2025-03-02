@@ -561,6 +561,11 @@ body.open .navbar-menu > button:hover {
   }
 }
 
+.servicios {
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
 .about {
   background-color: #E8E2DB;
   text-align: center;
